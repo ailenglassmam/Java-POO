@@ -1,24 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package programacion.objetos;
 
 import Entidad.Libro;
 import java.util.Scanner;
 
-/**
- *
- * @author PC
- */
 public class ejercicio1 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-       //        clase 2: ejercicio 1
+        //        clase 2: ejercicio 1
 
 //        creo una nueva instancia de la clase libro
         Libro ingreso1;
@@ -35,10 +23,10 @@ public class ejercicio1 {
         ingreso1.setAutor(leer.nextLine());
         System.out.println("Cantidad de páginas");
         ingreso1.setNumPag(leer.nextInt());
-        
+
         //muestro el objeto con el método to string para comparar con lo que voy a imprimir con el get
         System.out.println(ingreso1.toString());
-        
+
         //muestro los datos con el método get
         System.out.println("El libro que ingresaste a nuestra biblioteca posee los siguientes datos: ");
         System.out.println("Número ISBN: " + ingreso1.ISBN);
@@ -46,5 +34,5 @@ public class ejercicio1 {
         System.out.println("Autor: " + ingreso1.autor);
         System.out.println("Cantidad de páginas: " + ingreso1.numPag);
     }
-    
+
 }

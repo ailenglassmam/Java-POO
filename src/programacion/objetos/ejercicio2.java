@@ -1,21 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package programacion.objetos;
 
-/**
- *
- * @author PC
- */
+import Entidad.Circunferencia;
+
 public class ejercicio2 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // clase 2: ejercicio 2
+
+        Circunferencia intento1 = new Circunferencia();
+
+        intento1.crearCircunferencia();
+
+        //guardo en variables los resultados obtenidos en las clases
+        double area = intento1.area();
+        double perimetro = intento1.perimetro();
+
+        System.out.println("El área de la circunferencia ingresada es: " + area);
+        System.out.println("El perímetro de la circunferencia ingresada es: " + perimetro);
     }
-    
+
 }
