@@ -34,16 +34,22 @@ public class Circunferencia {
     }
     
     //creo el método crearCircunferencia() que va a pedirle al usuario que ingrese el dato y luego lo va a almacenar en la variable radio previamente creada
+    // los métodos que reciben valores del usuario y asignan esos valores
+    // recibidos a alguno de los atributos, siempre son void (no retornan ningún valor)
     public void crearCircunferencia() {
         Scanner leer = new Scanner(System.in);
         System.out.print("Ingrese el radio de la circunferencia: ");
         radio = leer.nextDouble();
     }
     
-    //creo el método de tipo get para calcular el area de la circunferencia
+    
+    
+    // cuando es un método que, por medio de un atributo, realiza un "calculo"
+    // el método tiene que indicar el tipo de valor que va a devolver (int, double, String, etc)
+    //en este caso creo el método de tipo get para calcular el area de la circunferencia
     public double area() {
         this.area = Math.PI * (radio * radio);
-        return area;
+        return area; //con return devuelvo el valor del calculo realizado puediendo utilizarlo en el main Class
     }
     
     //creo el método para calcular el perímetro de la circunferencia
